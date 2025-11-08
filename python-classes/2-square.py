@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 """Defines a Square class"""
 
-
 class Square:
-    """This is the class Square and defining its size. And the size must be reater than or equal to 0"""
+    """A class that defines a square with size validation."""
 
     if not isinstance(size, int):
             raise TypeError("size must be an integer")
