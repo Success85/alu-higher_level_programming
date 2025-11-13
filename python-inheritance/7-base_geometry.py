@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module that defines BaseGeometry with area and integer_validator"""
 
+
 class BaseGeometry:
 
     """BaseGeometry class with area and integer validation methods"""
