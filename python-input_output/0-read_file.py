@@ -4,6 +4,7 @@ This module defines a function for reading and printing
 the contents of a text file (UTF-8).
 """
 
+
 def read_file(filename=""):
     """
     Reads a text file (UTF-8) and prints its contents to stdout.
