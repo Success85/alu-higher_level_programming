@@ -1,28 +1,26 @@
 #!/usr/bin/python3
-"""Handles basic arithmetic operations using functions from calculator_1.py."""
-
 from calculator_1 import add, sub, mul, div
 import sys
 
 if __name__ == "__main__":
     if len(sys.argv) != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
-        exit(1)
+        sys.exit(1)
 
     a = int(sys.argv[1])
-    operator = sys.argv[2]
+    op = sys.argv[2]
     b = int(sys.argv[3])
 
-    if operator == '+':
-        result = add(a, b)
-    elif operator == '-':
-        result = sub(a, b)
-    elif operator == '*':
-        result = mul(a, b)
-    elif operator == '/':
-        result = div(a, b)
+    if op == '+':
+        res = add(a, b)
+    elif op == '-':
+        res = sub(a, b)
+    elif op == '*':
+        res = mul(a, b)
+    elif op == '/':
+        res = div(a, b)
     else:
         print("Unknown operator. Available operators: +, -, * and /")
-        exit(1)
+        sys.exit(1)
 
-    print(f"{a} {operator} {b} = {result}")
+    print(f"{a} {op} {b} = {res}")
